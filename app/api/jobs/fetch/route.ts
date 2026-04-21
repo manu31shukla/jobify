@@ -48,7 +48,7 @@ export async function GET(request: NextRequest) {
         fetched_at:  new Date().toISOString(),
       }))
 
-      const { error, count } = await supabase
+      const { error, data } = await supabase
         .from('jobs')
         .upsert(batch, { onConflict: 'url', ignoreDuplicates: true })
         .select('id')
