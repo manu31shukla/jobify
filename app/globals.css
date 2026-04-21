@@ -35,12 +35,12 @@ body {
     @apply bg-green/15 text-green border border-green/30 text-[10px] px-2 py-0.5 rounded font-mono;
   }
   .badge-verdict-strong {
-    @apply bg-blue/12 text-blue border border-blue/25 text-[10px] px-2 py-0.5 rounded font-mono;
+    @apply bg-blue/15 text-blue border border-blue/30 text-[10px] px-2 py-0.5 rounded font-mono;
   }
   .badge-verdict-possible {
-    @apply bg-orange/12 text-orange border border-orange/25 text-[10px] px-2 py-0.5 rounded font-mono;
+    @apply bg-orange/15 text-orange border border-orange/30 text-[10px] px-2 py-0.5 rounded font-mono;
   }
   .badge-verdict-skip {
-    @apply bg-red/12 text-red border border-red/25 text-[10px] px-2 py-0.5 rounded font-mono;
+    @apply bg-red/15 text-red border border-red/30 text-[10px] px-2 py-0.5 rounded font-mono;
   }
 }
