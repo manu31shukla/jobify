@@ -51,10 +51,10 @@ export async function GET(request: NextRequest) {
       const { error, count } = await supabase
         .from('jobs')
         .upsert(batch, { onConflict: 'url', ignoreDuplicates: true })
-        .select('id', { count: 'exact', head: true })
+        .select('id')
 
       if (error) console.error('Upsert error:', error.message)
-      else inserted += count ?? 0
+      else inserted += data?.length ?? 0
     }
 
     // Clean up old jobs (older than 30 days) to keep DB lean
